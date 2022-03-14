@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+  
+    height: calc(100vh - 200px);
+    background-image: url(image/pastelesxd.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.ordbtn{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #19408f;
+}
+ordbtn:hover{
+    background-color: #102d68;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+#hero{
+    
+}
+.header{
+    background-color: #ff95cb;
+    height: 200px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    padding: 0 10px;
+    line-height: 200px;
+    height: 200px;
+    width: 200px;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 200px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background-color: #19408f;
+    transition: .5s;
+}
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 30px;
+    line-height: 200px;
+    height: 200px;
+    cursor: pointer;
+
+    display: none;
+}
+@media(max-width: 768px){
+    body{
+        padding-top: 70px 20px 0;
+    }
+    .header{   
+        height: 160px;
+    }
+    .logo{
+        padding: 0 5px;
+        line-height: 160px;
+        height: 160px;
+        width: 160px;
+    }
+    
+    .nav-menu{
+       flex-direction: column;
+       align-items: center;
+        margin-right: 40px;
+        background-color: #19408f;
+        position: fixed;
+        left: 0;
+        top: 160px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 160px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        line-height: 100px;
+    }
+    
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: #ff95cb;
+    }
+    .nav-toggle{
+        display: block;
+        height: 160px;
+        line-height: 160px;
+         height: 160px;
+    }
+    .nav-menu_visible{
+        left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+}
