@@ -1,145 +1,246 @@
-* {
-    margin: 0;
+*{
     box-sizing: border-box;
+    margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: sans-serif;
-    padding: 90px 20px 0;
-  
-    height: calc(100vh - 200px);
-    background-image: url(image/pastelesxd.jpeg);
-    background-size: cover;
-    background-position: center;
+    margin: 0;
 }
-.ordbtn{
+h1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em; padding: 10px;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
     font-size: 1.5em;
     font-weight: bold;
-    padding: 10px 40px;
+    padding: 10px 15px;
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 2px solid rgba(0, 0,0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0,0, 0.5);
     color: white;
     background-color: #19408f;
 }
-ordbtn:hover{
-    background-color: #102d68;
+
+button:hover{
+    background-color: #0f295e;
 }
+
 .container{
     max-width: 1400px;
     margin: auto;
 }
-#hero{
-    
-}
-.header{
-    background-color: #ff95cb;
-    height: 200px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
 
-    max-width: 992px;
-    margin: 0 auto;
+.color-acento{
+    color: #ff95cb;
 }
-.nav-link{
-    color: white;
-    text-decoration: none;
+header{
+    background-color: #ff95cb;
 }
-.logo{
-    padding: 0 10px;
-    line-height: 200px;
+
+header .logo{
+    margin: 0;
+    padding: 10px 10px;
     height: 200px;
     width: 200px;
 }
-.nav-menu{
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-}
-.nav-menu-item{
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 200px;
-    text-transform: uppercase;
-    width: max-content;
-}
-.nav-menu-link{
-    padding: 8px 12px;
-    border-radius: 3px;
-}
-.nav-menu-link:hover,
-.nav-menu-link_active{
-    background-color: #19408f;
-    transition: .5s;
-}
-.nav-toggle{
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 30px;
-    line-height: 200px;
-    height: 200px;
-    cursor: pointer;
 
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display:  flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+header a:hover{
+    color: #19408f;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(/image/pastelefiaFHD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#somos-charys{
+    margin: 16px 0px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+#somos-charys .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-productos{
+    background-color: #ff95cb;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+}
+
+#nuestros-productos .container{
+    padding: 100px 0px;
+}
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#nuestros-productos p{
     display: none;
 }
-@media(max-width: 768px){
-    body{
-        padding-top: 70px 20px 0;
-    }
-    .header{   
-        height: 160px;
-    }
-    .logo{
-        padding: 0 5px;
-        line-height: 160px;
-        height: 160px;
-        width: 160px;
-    }
+#nuestros-productos .carta {
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(/image/pastelCarta.jpg);   
+}
+.carta:nth-child(2){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(/image/paysCarta.jfif);   
+}
+.carta:nth-child(3){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(/image/gelatinaCarta.jpg);
+}
+
+#nosotros-publicidad {
+    text-align: center;
+    padding: 200px 12px;
     
-    .nav-menu{
-       flex-direction: column;
-       align-items: center;
-        margin-right: 40px;
-        background-color: #19408f;
+}
+#contacto .container{
+    align-items: center;
+}
+#contactos li{
+    margin: 16px 16px;
+    font-weight: bold;
+    align-items: center;
+}
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width: 720px){
+    header{
         position: fixed;
-        left: 0;
-        top: 160px;
         width: 100%;
-        padding: 20px 0;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #somos-charys .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somos-charys .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-        height: calc(100% - 160px);
-        overflow-y: auto;
+    #somos-charys .img-container{
+        background-image:  linear-gradient(
+            0deg,
+            rgba(104, 103, 103, 0.5),
+            rgba(87, 85, 85, 0.5)
+        ) 
+        ,url(/image/logo.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
 
-        left: 100%;
-        transition: left 0.3s;
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+
     }
-    .nav-menu-item{
-        line-height: 100px;
-    }
-    
-    .nav-menu-link:hover,
-    .nav-menu-link_active{
-        background: none;
-        color: #ff95cb;
-    }
-    .nav-toggle{
+
+    #nuestros-productos p{
         display: block;
-        height: 160px;
-        line-height: 160px;
-         height: 160px;
+        margin-bottom: 30px;
     }
-    .nav-menu_visible{
-        left: 0;
+    #nuestros-productos h3{
+        margin-top: 0;
     }
-    .nav-toggle:focus:not(:focus-visible){
-        outline: none;
+
+    #nuestros-productos .carta{
+        padding: 15px;
     }
+
+   
+
 }
