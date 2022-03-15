@@ -1,75 +1,91 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasteleria</title>
+    <title>Charys'</title>
     <link rel="stylesheet" href="estilos/styles.css">
-    <link rel="shortcut icon" href="image/pastel.png">
-    <script src="https://kit.fontawesome.com/5edc3a915f.js" crossorigin="anonymous"></script>
-    <script defer src="jcs/index.js"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo">
-                <img src="image/logo.png" alt="logoPrincipal" class="logo" >
-            </a>
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav-menu ">
-                <li class="nav-menu-item">
-                    <a href="index.html" class="nav-menu-link nav-link">Inicio</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="productos.html" class="nav-menu-link nav-link">Productos</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="" class="nav-menu-link nav-link">Sucursales</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="" class="nav-menu-link nav-link">Promociones</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>  
-    <br> 
+    <header>
+        <div class="container">
+            <div class="container-logo">
+              <a href="#" class="logo">
+                  <img src="image/logo.png" alt="logoPrincipal" class="logo" >
+              </a>
+            </div>
+            <div class="container-nav">
+               <nav>
+                   <a href="#nuestros-productos">Productos</a>
+                   <a href="#">Sucursales</a>
+                   <a href="#nosotros-publicidad">Contacto</a>
+               </nav>
+            </div>
+        </div>
+    </header>
+
+
     <section id="hero">
         <h1>Pasteles deliciosos <br> para toda ocasión</h1>
-        <button class="ordbtn">¡ORDENAR!</button>
+        <button>¡ORDENA YA!</button>
     </section>
-    <section id="productos">
-        <div class="container"> 
-            <h2>PRODUCTOS</h2>
-            <div class="carta"> 
-                <h3>PASTELES</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Officiis totam et minus at illo facilis suscipit ipsum atque,     debitis explicabo delectus maiores voluptatem architecto qui?     Fuga molestiae explicabo sint laborum.</p>
-                <button class="ordbtn">+ INFO</button>
+
+
+    <section id="somos-charys">
+        <div class="container">
+           <div class="img-container"></div>
+           <div class="texto">
+              <h2>Somos <span class="color-acento">Charys¡</span>
+                   </h2> 
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto culpa ea hic modi inventore ratione, exercitationem eveniet? Ratione molestias sed dolorum, eveniet, alias magnam autem veritatis nihil illo, fugit iusto?</p>
+           </div>
+        </div>
+    </section>
+
+
+    <section id="nuestros-productos">
+        <div class="container">
+              <h2>Nuestros productos</h2>
+              <div class="productos">
+                <div class="carta">
+                    <h3>Pasteles</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, itaque       dolorum sed totam aperiam rerum! Voluptate pariatur dolores dignissimos mollitia       quidem suscipit temporibus, accusamus nesciunt provident beatae, libero a modi.</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Pays</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, itaque       dolorum sed totam aperiam rerum! Voluptate pariatur dolores dignissimos mollitia       quidem suscipit temporibus, accusamus nesciunt provident beatae, libero a modi.</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Gelatinas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing    elit. Quasi, itaque       dolorum sed totam aperiam rerum! Voluptate pariatur dolores dignissimos  mollitia       quidem suscipit temporibus, accusamus   nesciunt provident beatae, libero a modi.</p>
+                   <button>+ Info</button>
+                 </div>
             </div>
-            <div class="carta">
-                <h3>PAYS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Officiis totam et minus at illo facilis suscipit ipsum atque,     debitis explicabo delectus maiores voluptatem architecto qui?     Fuga molestiae explicabo sint laborum.</p>
-               <button class="ordbtn">+ INFO</button>
-            </div>
-            <div class="carta">
-                <h3>GELATINAS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Officiis totam et minus at illo facilis suscipit ipsum atque,     debitis explicabo delectus maiores voluptatem architecto qui?     Fuga molestiae explicabo sint laborum.</p>
-                <button class="ordbtn">+ INFO</button>
-            </div>
+        </div>
+    </section>
+
+
+    <section id="nosotros-publicidad">
+        <div class="container">
+          <ul id="contactos">
+              <li>🛵 SERVICIO A DOMICILIO LOS 365 DÍAS DEL AÑO</li>
+              <li>☎️ 9993968270</li>
+              <li>📱 Facebook: CHARYS OFICIAL</li>
+              <li>📷 Instagram: @CHARYS PICKS</li>
+              <li>✉️ charys_pastelesMID@gmail.com</li>
+          </ul>
        </div>
     </section>
-    <section id="contacto">
 
-    </section>
     <footer>
         <div class="container">
-            <p>&copy; Chary2022</p>
+            <p>&copy;2022 Pasteleria Charys </p>
         </div>
     </footer>
+
+
 </body>
 </html>
